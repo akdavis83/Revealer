@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@100..900&family=Montserrat:wght@100..900&display=swap');
+body,html { height: 100%; background-color: #000;}
+body { height: 100%; font-family: "Montserrat", sans-serif; display: flex; align-items: center; justify-content: center; margin: 0px; color: #fff; overflow: hidden;}
+
+
+.typewave { display: grid; grid-template-columns: repeat(9, 1fr); grid-gap: 15px; font-size: 4vw; width: 90vw;}
+.typewave span { display: block; aspect-ratio: 1/1; display:flex; align-items: center; justify-content: center; font-variation-settings: 'wght' 100; }
+
+.typewave span { animation-name: anim; animation-iteration-count: infinite; animation-duration:3s;}
+
+.typewave span:nth-child(10n+1) { animation-delay: 0.3s}
+.typewave span:nth-child(10n+2) { animation-delay: 0.6s}
+.typewave span:nth-child(10n+3) { animation-delay: 0.9s}
+.typewave span:nth-child(10n+4) { animation-delay: 1.2s}
+.typewave span:nth-child(10n+5) { animation-delay: 1.5s}
+.typewave span:nth-child(10n+6) { animation-delay: 1.8s}
+.typewave span:nth-child(10n+7) { animation-delay: 2.1s}
+.typewave span:nth-child(10n+8) { animation-delay: 2.4s}
+.typewave span:nth-child(10n+9) { animation-delay: 2.7s}
+.typewave span:nth-child(10n) 	{ animation-delay: 3s}
+
+@keyframes anim {
+	0% { transform:scale(1); font-variation-settings: 'wght' 100}
+	50% { transform:scale(1.3); font-variation-settings: 'wght' 900}
+	100% { transform:scale(1); font-variation-settings: 'wght' 100}
+}
